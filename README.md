@@ -16,5 +16,11 @@
   * It's default build with ```target/debug``` build
 * ```cargo run``` - compile and run program
 * ```cargo check``` - compile and check errors
+* ```cargo build --released``` - compile optimized version
+* ```cargo update``` - updating dependencies
 
-Checkpoint file:///home/marcin/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html/book/ch01-03-hello-cargo.html
+#### Dependencies
+* ```https://crates.io/```
+* ```cargo doc --open``` - build docs dependencies of your program
+
+https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
