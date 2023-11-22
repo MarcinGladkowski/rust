@@ -24,3 +24,7 @@
 * ```cargo doc --open``` - build docs dependencies of your program
 
 https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
+
+
+#### Cargo.lock file
+```cargo update```: ignore lock file and trying to find out the newest version of packages
