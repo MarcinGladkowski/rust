@@ -28,3 +28,10 @@ https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
 
 #### Cargo.lock file
 ```cargo update```: ignore lock file and trying to find out the newest version of packages
+
+#### Variables 
+> https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html
+
+##### Main concepts
+* variables by defaults are **immutable!**
+* but you can make variables mutable if you want!
