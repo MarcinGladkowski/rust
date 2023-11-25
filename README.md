@@ -56,6 +56,16 @@ Data types subsets:
       but:
       u8 -> from 0 to 2**8-1 (from 0 to 255)
       ``` 
+      
+      ```
+      Integer overflow
+      example: 
+        i32 -> and the program willing to assing integer 256
+      
+      * In --release mode it change value to **1**
+      * In debug programs **interupt** with panic mode
+      ```
+
   * floating-points,
   * numbers
   * Boolean
