@@ -65,13 +65,72 @@ Data types subsets:
       * In --release mode it change value to **1**
       * In debug programs **interupt** with panic mode
       ```
+      
+      ```
+      Use underscore _ to make integers more readable => 100_000
+      ```
 
-  * floating-points,
+  * floating-points
+      ```
+      Two primitive values f32 and f64. f64 is default and more usable because
+      is more precise and not much slower than f32. All floating points are signed.
+    
+      let x = 2.0 // f64 - double precision float
+      let y: f32 = 1.6 // f32 - single precision float
+    
+      Implementing standard IEEE-754
+      ```
   * numbers
   * Boolean
+    ```
+    Two possible states true/false
+    
+    let x = true;
+    let y: bool = false;
+    ```
   * characters
+    ```
+    let x = 'Marcin'
+    let y: char = 'developer'
+    
+    Single qotes '' => char literals - four bytes in size, can represent Unicode chars
+    Dobule quotes "" => string literal
+    
+    ```
   
-* Compound
-
+* Compound types (multiple values in one type)
+  
+  * Tuples
+    ```
+    Like in Python cannot shrink or grow once time created tuple
+    
+    let tup = (20, 10.0)
+    
+    let (x, y) = tup // can use destructuring, like in Python/JS
+    
+    let y: (u32, f64) = (20, 1.0)
+    
+    let z = y.0 // access by index
+    let a = y.1
+    
+    Empty created tuple is called UNIT. Usable to return nothing.
+    ```
+  
+  * Array type
+  ```
+    * All values stored in array MUST have the same type
+    * Length is fixed - not changeable
+    * If you want to use changeable data structure probably you can use a Vector
+  
+    let x = [1, 2, 3, 4]
+    
+    let y: [u32, 3] = [1, 2, 3]
+  
+    let z: [3, 2]; // is the same like let z: u32 = [3, 3]
+    
+    access to elements by indexes starting from 0 
+    let one = z[0]
+    let second = z[1]
+  ```
 
 
