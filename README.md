@@ -2,6 +2,11 @@
 
 * Statically typed language
 
+### Troubleshooting
+
+* Missing `Cargo.toml` file. It's not possible to build project `cargo build` when this file
+is missing. You can generate it by command `cargo init`.
+
 ### Start
 * Files are ending with extension ```.rs```
 * Compile class by ```rustc``` command
