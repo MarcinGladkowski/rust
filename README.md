@@ -142,3 +142,10 @@ Data types subsets:
 ### Functions
 * snake_case
 * entry point of program contains function `main()`
+* types declarations are required
+* Statements - perform actions but not return value 
+  - declare variable
+  ```let x = 12```
+   - function definition
+* Expressions - return values
+  - execute function
