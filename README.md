@@ -8,6 +8,7 @@
 is missing. You can generate it by command `cargo init`.
 
 ### Start
+* Creating new executable project `cargo new <name - will be project directory>`
 * Files are ending with extension ```.rs```
 * Compile class by ```rustc``` command
 * ```main()``` function is entry of each program
@@ -138,4 +139,6 @@ Data types subsets:
     let second = z[1]
   ```
 
-
+### Functions
+* snake_case
+* entry point of program contains function `main()`
