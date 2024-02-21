@@ -54,5 +54,36 @@ fn main() {
         }
         multi_loops_count += 1;
     }
-    println!("End count = {multi_loops_count}")
+    println!("End count = {multi_loops_count}");
+
+    // while
+    let mut while_number =3;
+
+    while while_number != 0 { // reduces if/breaks statements in code
+        println!("{while_number}");
+
+        while_number -= 1;
+    }
+    print!("LIFTOFF!!!");
+
+    // looping in collection
+    let a = [10, 20, 30, 40, 50];
+    let mut array_index = 0;
+
+    while array_index < 5 { // could perform panic while index is out of bounds
+        println!("the value is: {}", a[array_index]);
+
+        array_index += 1;
+    }
+
+    // for in loop
+    for element in a {
+        println!("The value is: {element}")
+    }
+
+    // with generated range in reverse
+    for number in (1..4).rev() {
+        println!("The number is {number}")
+    }
+
 }
