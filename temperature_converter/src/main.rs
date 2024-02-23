@@ -1,4 +1,6 @@
 use std::io;
+use std::io::Stdin;
+use std::num::ParseIntError;
 
 fn main() {
     println!("Hello, world!");
@@ -9,12 +11,22 @@ fn main() {
     let stdin = io::stdin(); // got stdin
     stdin.read_line(&mut temperature);
 
-    // validate inouit
-
+    // validate input
     println!("Please provide type: Fahrenheit(F) or Celsius (C)");
     stdin.read_line(&mut metric_scale);
 
-    // validate input
+    let scales: [&str; 2] = ["F", "C"];
 
-    println!("You provided {temperature} and metric {metric_scale}")
+    let is_correct_metric: bool = scales.contains(metric_scale);
+
+    if !is_correct_metric {
+        println!("Incorrect metric provided. Only {:?} available", scales);
+        return;
+    }
+
+    // validate input
+    println!("You provided {temperature} and metric {metric_scale}");
+
+    let temperature_value: i32 = temperature.trim().parse().expect("Cannot par10se provided temperature");
+
 }
