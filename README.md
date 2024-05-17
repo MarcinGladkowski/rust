@@ -149,3 +149,12 @@ Data types subsets:
    - function definition
 * Expressions - return values
   - execute function
+
+### Ownership 
+* Unique for Rust language
+* Guarantees safety memory without a garbage collector
+* Stack and heap
+* Allocation of memory determines why 
+  ```
+  String is mutable but str not
+  ```
