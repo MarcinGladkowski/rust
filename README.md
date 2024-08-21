@@ -160,5 +160,5 @@ Data types subsets:
   ```
 * GC (garbage collector)
   * In programming languages without GC the programmer MUST remember
-    about free memory when is not needed e.g. string.\
+    about free memory when is not needed e.g. string.
   * Rust has different approach (don't have GC as well) 
